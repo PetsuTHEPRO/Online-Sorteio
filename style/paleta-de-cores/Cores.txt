@@ -1,2 +1,7 @@
+Paleta de Cores
+
 Azul: #6867FF
+Lilas-Forte: #9567FF
+Lilas-Fraco: #C367FF
+Rosa: #F067FF
 Preto: #262626

@@ -1,6 +1,15 @@
 @import url("animation.css");
 
-/* Adicionais */
+/* Padrão */
+
+:root{
+    --cor_text: #262626;
+    --cor_branco: #ffffff;
+    --cor_azul: #6867FF;
+    --cor_lilasForte: #9567FF;
+    --cor_lilasFraco: #C367FF;
+    --cor_rosa: #F067FF;
+}
 
 *{
     margin: 0;
@@ -21,7 +30,7 @@
 /* Corpo */
 
 body{
-    color: #262626;
+    color: var(--cor_text);
 }
 
 /* Cabeçalho */
@@ -44,6 +53,17 @@ header ul{
 
 header ul li{
     margin: 40px 0px 0px 40px;
+    cursor: pointer;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: var(--cor_text);
+    transition: 0.3s ease-in;
+}
+
+header ul li a:hover{
+    color: var(--cor_azul);
 }
 
 /* Conteudo */
@@ -63,11 +83,15 @@ article h1{
 }
 
 article p{
+    display: block;
+    width: 554px;
+
+    text-align: justify;
     margin-bottom: 35px;
 
     font-family: 'Cocomat', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 article button{
@@ -79,14 +103,15 @@ article button{
     font-size: 18px;
     font-weight: 800;
 
-    background-color: #6867FF;
+    background-color: var(--cor_azul);
     color: white;
+    box-shadow: -3px 3px 5px 1px rgba(0, 0, 255, .2);
 }
 
 article button:hover{
     background-image: linear-gradient(45deg, #6867FF, #9567FF, #C367FF, #F067FF);
     background-size: 300% 300%;
-    animation: colors 7s ease infinite;
+    animation: colors 7s ease-in infinite;
     cursor: pointer;
 }
 
