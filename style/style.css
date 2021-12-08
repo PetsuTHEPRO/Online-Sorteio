@@ -1,0 +1,82 @@
+/* Adicionais */
+
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Cocomat';
+    src: url('fonts/Cocomat\ Light-trial.ttf'), url('fonts/Cocomat\ Ultralight-trial.ttf');
+}
+
+@font-face {
+    font-family: 'BrandonText';
+    src: url(fonts/BrandonText-Bold.otf), url(fonts/BrandonText-Light.otf), 
+         url(fonts/BrandonText-Regular.otf), url(fonts/BrandonText-RegularItalic.otf),
+         url(fonts/BrandonText-Thin.otf);
+}
+
+/* Corpo */
+
+body{
+    color: #262626;
+}
+
+/* Cabeçalho */
+
+header{
+    display: flex;
+}
+
+header img{
+    margin: 27px 250px 0px 135px;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+
+    font-family: 'Cocomat';
+    font-size: 16px;
+}
+
+header ul li{
+    margin: 40px 0px 0px 40px;
+}
+
+/* Conteudo */
+
+article{
+    margin: 130px 0px 0px 130px;
+}
+
+article h1{
+
+    margin-bottom: 25px;
+
+    font-family: 'BrandonText', sans-serif;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 80px;
+}
+
+article p{
+    margin-bottom: 35px;
+
+    font-family: 'Cocomat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+article button{
+    height: 68px;
+    width: 223px;
+    border: 0 none;
+
+    font-family: 'Cocomat', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    
+    background-color: #6867FF;
+    color: white;
+}
