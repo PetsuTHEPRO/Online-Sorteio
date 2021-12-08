@@ -68,11 +68,11 @@ header ul li a:hover{
 
 /* Conteudo */
 
-article{
+article#Pagina-Principal{
     margin: 130px 0px 0px 130px;
 }
 
-article h1{
+article#Pagina-Principal h1{
 
     margin-bottom: 25px;
 
@@ -82,7 +82,7 @@ article h1{
     line-height: 80px;
 }
 
-article p{
+article#Pagina-Principal p{
     display: block;
     width: 554px;
 
@@ -94,9 +94,7 @@ article p{
     font-weight: 500;
 }
 
-article button{
-    height: 68px;
-    width: 223px;
+button.buttom{
     border: 0 none;
 
     font-family: 'Cocomat', sans-serif;
@@ -108,13 +106,18 @@ article button{
     box-shadow: -3px 3px 5px 1px rgba(0, 0, 255, .2);
 }
 
-article button:hover{
+article#Pagina-Principal button{
+    height: 68px;
+    width: 223px;
+}
+
+article#Pagina-Principal button:hover{
     background-image: linear-gradient(45deg, #6867FF, #9567FF, #C367FF, #F067FF);
     background-size: 300% 300%;
     animation: colors 7s ease-in infinite;
     cursor: pointer;
 }
 
-article button:active{
+article#Pagina-Principal button:active{
     animation: heartbeat 1.5s ease-in-out infinite both;
 }
