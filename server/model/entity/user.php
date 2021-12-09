@@ -2,17 +2,18 @@
 
 class User{
 	var $_id;
+	var $_user;
 	var $_name;
+	var $_date;
 	var $_email;
 	var $_password;
 
-	function __construct($id, $name, $email, $password){
+	function __construct($id, $user, $name, $date, $email, $password){
 		$this->_id = $id;
+		$this->_user = $user;
 		$this->_name = $name;
+		$this->_date = $date;
 		$this->_email = $email;
 		$this->_password = $password;
-	}
-	function toString(){
-		echo "$this->_id, $this->_email, $this->_name, $this->_password";
 	}
 }

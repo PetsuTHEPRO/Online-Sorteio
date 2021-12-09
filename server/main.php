@@ -1,7 +1,12 @@
 <?php
 
-require_once __dir__."/controller/user-controller.php";
+require_once __dir__."/routes/routes.php";
 
-$controller_user = new User_Controller();
-$controller_user->Create_Account('vjr', '@.com', '123');
+$Data_Json = file_get_contents('php://input');
+$Data_Request = json_decode($Data_Json, true);
 
+$response = main_routes($Data_Request);
+
+header('Content-type: application/json');
+$response = json_encode($response);
+echo $response;
