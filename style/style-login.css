@@ -8,6 +8,10 @@
     --cor_rosa-padrao: #F77A7A;
 }
 
+header button{
+    background-color: var(--cor_rosa-padrao) !important;
+}
+
 article{
     display: flex;
     flex-direction: column;
@@ -17,7 +21,7 @@ article{
     width: 350px;
 
     margin: 65px auto 20px auto;
-    background-color: var(--cor_rosa-padrao);
+    background-color: var(--cor_azul);
     border-radius: 8px;
 }
 
@@ -35,7 +39,7 @@ div#campo-cadastro{
     display: flex;
     flex-direction: column;
     
-    height: 390px;
+    height: 300px;
     width: 350px;
 
     margin: 0px auto;
@@ -52,8 +56,8 @@ div#campo-cadastro span{
     margin-top: 8px;
 }
 
-div#campo-cadastro span#name{
-    margin-top: 25px;
+div#campo-cadastro span#email{
+    margin-top: 55px;
 }
 
 div#campo-cadastro input{
@@ -67,5 +71,5 @@ div#campo-cadastro button{
     width: 135px;
 
     margin: auto;
-    background-color: var(--cor_rosa-padrao);
+    background-color: var(--cor_azul);
 }
