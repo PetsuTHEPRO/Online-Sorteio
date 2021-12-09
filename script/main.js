@@ -16,8 +16,12 @@ const onClickButtonRegister = () => {
 		request.send(data);
 		request.onreadystatechange = function () {
 		    if (request.readyState === 4 && request.status === 200) {
-		        jsondata = JSON.parse(request.responseText);
-		        console.log(jsondata);
+		        try{
+		        	jsondata = JSON.parse(request.responseText);
+		       		console.log(jsondata);
+		       	}catch(e) {
+		 			console.log(request.responseText);
+		       	}
 		    }
 		}
 	})

@@ -6,12 +6,11 @@ function main_routes($data_request){
 	switch ($data_request['cmnd']) {
 	 	case "create_register":
 	 		Create_Account($data_request);
-	 		$response['main_routes'] = "{ main_routes | create_register } : Send Request |";
+	 		//echo "{ main_routes | create_register } : Send Request !";
 	 		break;
 	 	
 	 	default:
-	 		$response['main_routes'] = "{ main_routes | create_register } : Invalid Request !";
+	 		//echo "{ main_routes | create_register } : Invalid Request !";
 	 		break;
 	}
-	return $response;
 }
