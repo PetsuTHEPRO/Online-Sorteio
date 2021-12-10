@@ -16,4 +16,7 @@ class User{
 		$this->_email = $email;
 		$this->_password = $password;
 	}
+	function dbdata(){
+		return (string) "'$this->_user', '$this->_name', '$this->_date', '$this->_email', '$this->_password'";
+	}
 }
