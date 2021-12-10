@@ -1,30 +1,11 @@
 @import url("animation.css");
+@import url("fonts.css");
+@import url("variaveis.css");
 
 /* Padrão */
 
-:root{
-    --cor_text: #262626;
-    --cor_branco: #ffffff;
-    --cor_azul: #6867FF;
-    --cor_lilasForte: #9567FF;
-    --cor_lilasFraco: #C367FF;
-    --cor_rosa: #F067FF;
-}
-
 *{
     margin: 0;
-}
-
-@font-face {
-    font-family: 'Cocomat';
-    src: url('fonts/Cocomat\ Light-trial.ttf'), url('fonts/Cocomat\ Ultralight-trial.ttf');
-}
-
-@font-face {
-    font-family: 'BrandonText';
-    src: url(fonts/BrandonText-Bold.otf), url(fonts/BrandonText-Light.otf), 
-         url(fonts/BrandonText-Regular.otf), url(fonts/BrandonText-RegularItalic.otf),
-         url(fonts/BrandonText-Thin.otf);
 }
 
 /* Corpo */
@@ -42,7 +23,7 @@ header{
 }
 
 header img{
-    margin: 20px 270px 0px 155px;
+    margin: 5vh 20vw auto 11vw;
 }
 
 header ul{
@@ -50,11 +31,11 @@ header ul{
     list-style: none;
 
     font-family: 'Cocomat';
-    font-size: 16px;
+    font-size: 1em;
 }
 
 header ul li{
-    margin: 25px 0px 0px 40px;
+    margin: 5vh auto auto 3vw;
     cursor: pointer;
 }
 
@@ -68,7 +49,7 @@ header ul li a:hover{
     color: var(--cor_azul);
 }
 
-header button.login{
+.btn-login{
     height: 40px;
     width: 75px;
     margin: 25px 0px 0px 50px;
@@ -78,23 +59,23 @@ header button.login{
     box-shadow: -3px 3px 5px 1px rgba(0, 0, 255, .2);
 }
 
-/* Conteudo */
+/* Estilização da Página Home */
 
-article#Pagina-Principal{
-    margin: 130px 0px 0px 150px;
+#Pagina-Principal{
+    margin: 19vh auto auto 21vh;
 }
 
-article#Pagina-Principal h1{
+#Pagina-Principal h1{
 
     margin-bottom: 25px;
 
     font-family: 'BrandonText', sans-serif;
-    font-size: 75px;
+    font-size: 5em;
     font-weight: 900;
     line-height: 80px;
 }
 
-article#Pagina-Principal p{
+#Pagina-Principal p{
     display: block;
     width: 554px;
 
@@ -106,7 +87,7 @@ article#Pagina-Principal p{
     font-weight: 500;
 }
 
-button.button{
+.button{
     border: 0 none;
 
     font-family: 'BrandonText', sans-serif;
@@ -116,8 +97,7 @@ button.button{
     color: white;
 }
 
-article#Pagina-Principal button{
-    
+#Pagina-Principal button{    
     height: 68px;
     width: 223px;
 
@@ -125,13 +105,137 @@ article#Pagina-Principal button{
     box-shadow: -3px 3px 5px 1px rgba(0, 0, 255, .2);
 }
 
-article#Pagina-Principal button:hover{
+#Pagina-Principal button:hover{
     background-image: linear-gradient(45deg, #6867FF, #9567FF, #C367FF, #F067FF);
     background-size: 300% 300%;
     animation: colors 7s ease-in infinite;
     cursor: pointer;
 }
 
-article#Pagina-Principal button:active{
+#Pagina-Principal button:active{
     animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+/* Estilização do Painel */
+
+#login{
+
+    display: flex;
+    flex-direction: column;
+
+    height: 300px;
+    width: 350px;
+
+    margin: 0px auto;
+
+    border: 1px solid var(--cor_text);
+    background-color: #F7F5FF;
+    border-radius: 6px;
+}
+
+#login span{
+    font-family: 'Cocomat', sans-serif;
+    margin-left: 30px;
+    margin-bottom: 3px;
+}
+
+#login #email{
+    margin-top: 45px;
+}
+
+#login input{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    height: 20px;
+}
+
+#login button{
+    height: 40px;
+    width: 135px;
+
+    margin: auto;
+    background-color: var(--cor_azul);
+}
+
+
+/* Estilização Login */
+
+#cadastro{
+    display: flex;
+    flex-direction: column;
+    
+    height: 390px;
+    width: 350px;
+
+    margin: 0px auto;
+ 
+    border: 1px solid var(--cor_text);
+    background-color: #F7F5FF;
+    border-radius: 6px;
+}
+
+#cadastro span{
+    font-family: 'Cocomat', sans-serif;
+    margin-left: 30px;
+    margin-bottom: 3px;
+    margin-top: 8px;
+}
+
+#cadastro span#name{
+    margin-top: 25px;
+}
+
+#cadastro input{
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 20px;
+}
+
+#cadastro button{
+    height: 40px;
+    width: 135px;
+
+    margin: auto;
+    background-color: var(--cor_rosa-padrao);
+    box-shadow: -3px 3px 5px 1px rgba(247, 122, 122, 0.2);
+}
+
+.btn-cadastro{
+    height: 40px;
+    width: 90px;
+    margin: 25px 0px 0px 50px;
+
+    border-radius: 6px;
+    background-color: var(--cor_rosa-padrao);
+    box-shadow: -3px 3px 5px 1px rgba(247, 122, 122, 0.2);
+}
+
+.titulo-painel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        
+    height: 45px;
+    width: 350px;
+
+    margin: 65px auto 20px auto;
+    border-radius: 8px;
+}
+
+.titulo-painel h1{
+    
+    margin: 0px 0px 0px 20px;    
+    
+    font-family: 'BrandonText', sans-serif;
+    font-size: 20px;
+    color: var(--cor_branco);
+}
+
+.login{
+    background-color: var(--cor_azul);
+}
+
+.cadastro{
+    background-color: var(--cor_rosa-padrao);
 }

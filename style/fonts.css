@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Cocomat';
+    src: url('fonts/Cocomat\ Light-trial.ttf'), url('fonts/Cocomat\ Ultralight-trial.ttf');
+}
+
+@font-face {
+    font-family: 'BrandonText';
+    src: url(fonts/BrandonText-Bold.otf), url(fonts/BrandonText-Light.otf), 
+         url(fonts/BrandonText-Regular.otf), url(fonts/BrandonText-RegularItalic.otf),
+         url(fonts/BrandonText-Thin.otf);
+}

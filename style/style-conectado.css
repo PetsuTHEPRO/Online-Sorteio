@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #F7F5FF;
+}
+
+.conteudo{
+    display: flex;
+    position: relative;
+}
+
+.conteudo .menuLateral{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #262626;
+    padding: 30px 0;
+}
+
+.conteudo .menuLateral h2{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.conteudo .menuLateral ul li{
+    font-family: 'Cocomat', sans-serif;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.conteudo .menuLateral ul li a{
+    color: #fff;
+    display: block;
+}
+
+.conteudo .menuLateral ul li a .fas{
+    widows: 25px;
+}
+
+
+

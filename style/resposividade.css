@@ -1,0 +1,10 @@
+@media (min-width: 375px) and (max-width: 1024px) {
+    header img{
+        margin: 5vh 7vw auto 9vw;
+    }
+
+    #Pagina-Principal{
+        margin: 19vh auto auto 9vw;
+    }
+
+}

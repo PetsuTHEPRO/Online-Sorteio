@@ -1,0 +1,13 @@
+:root{
+    --cor_text: #262626;
+    --cor_branco: #ffffff;
+    --cor_cinza: #F7F5FF;
+    --cor_azul: #6867FF;
+    --cor_lilasForte: #9567FF;
+    --cor_lilasFraco: #C367FF;
+    --cor_rosa: #F067FF;
+    --cor_rosa-padrao: #F77A7A;
+
+    --font-padrao: 'Cocomat', sans-serif;
+    --font-titulo: 'BrandonText', sans-serif;
+}

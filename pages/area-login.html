@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/style-login.css">
 </head>
 <body>
     <header>
@@ -17,18 +16,18 @@
             <li><a target="_blank" href="https://www.instagram.com">Instagram</a></li>
             <li><a href="#">Sobre nós</a></li>
         </ul>
-        <button onclick="window.location.href = 'area-cadastro.html'" class="button cadastro">Cadastro</button>
+        <button onclick="window.location.href = 'area-cadastro.html'" class="button btn-cadastro">Cadastro</button>
     </header>
 
-    <article id="Tela-Cadastro">
+    <article class="titulo-painel login">
         <h1>Painel de Login</h1>
     </article>
-    <div id="campo-cadastro">
-        <span id="email">Email:</span>
-        <input type="text" name="email" id="input-email">
-        <span id="senha">Senha:</span>
-        <input type="password" name="senha" id="input-password">
-        <button class="button">Entrar</button>
-    </div>
+        <div id="login">
+            <span id="email">Email:</span>
+            <input type="text" name="email" id="input-email">
+            <span id="senha">Senha:</span>
+            <input type="password" name="senha" id="input-password">
+            <button class="button">Entrar</button>
+        </div>
 </body>
 </html>
