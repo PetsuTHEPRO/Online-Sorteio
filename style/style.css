@@ -98,8 +98,9 @@ header ul li a:hover{
 }
 
 #Pagina-Principal button{    
-    height: 68px;
+    height: 10vh;
     width: 223px;
+    /* width: 17vw; */
 
     background-color: var(--cor_azul);
     box-shadow: -3px 3px 5px 1px rgba(0, 0, 255, .2);

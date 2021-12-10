@@ -1,10 +1,184 @@
-@media (min-width: 375px) and (max-width: 1024px) {
+
+@media (min-width: 1115px) and (max-width: 1200px) {
+    
+    header img{
+        margin: 5vh 15vw auto 11vw;
+    }
+
+    header ul li{
+        margin: 5vh auto auto 2vw;
+    }
+    
+    header .btn-login{
+        margin: 5vh 8vw auto 4vw;
+    }
+    
+}
+
+@media (min-width: 1024px) and (max-width: 1115px) {
+    
+    header img{
+        margin: 5vh 13vw auto 8vw;
+    }
+
+    header .btn-login{
+        margin: 5vh 3vw auto 3vw;
+    }
+
+    #Pagina-Principal{
+        margin-left: 8vw;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1024px) {
     header img{
         margin: 5vh 7vw auto 9vw;
     }
 
     #Pagina-Principal{
         margin: 19vh auto auto 9vw;
+    }
+
+}
+
+@media (min-width: 812px) and (max-width: 980px) {
+    
+    header img{
+        margin: 5vh 0vw auto 8vw;
+    }
+
+    header .btn-login{
+        margin: 5vh 3vw auto 3vw;
+    }
+
+    #Pagina-Principal{
+        margin-left: 8vw;
+    }
+
+    #Pagina-Principal h1{
+        font-size: 4em;
+    }
+
+    #Pagina-Principal p{
+        font-size: 1.3em;
+    }
+
+    #Pagina-Principal button{
+        width: 28vw;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 812px){
+
+    header .btn-login{
+        display: none;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    #Pagina-Principal{
+        margin-left: 11vw;
+    }
+
+    #Pagina-Principal h1{
+        font-size: 4em;
+    }
+
+    #Pagina-Principal p{
+        font-size: 1.3em;
+    }
+
+    #Pagina-Principal button{
+        width: 28vw;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 750px) {
+
+    header ul{
+        display: none;
+    }
+
+    header button{
+        display: none;
+    }
+
+    #Pagina-Principal{
+        margin-left: 11vw;
+    }
+
+    #Pagina-Principal h1{
+        font-size: 3.5em;
+    }
+
+    #Pagina-Principal p{
+        font-size: 1.3em;
+    }
+
+    #Pagina-Principal button{
+        width: 30vw;
+    }
+
+}
+
+@media (min-width: 459px) and (max-width: 650px) {
+
+    header ul{
+        display: none;
+    }
+    
+    header button{
+        display: none;
+    }
+
+    #Pagina-Principal{
+        margin-top: 25vh;
+        margin-left: 11vw;
+    }
+
+    #Pagina-Principal h1{
+        font-size: 3.5em;
+        line-height: 50px;
+    }
+
+    #Pagina-Principal p{
+        width: 354px;
+        font-size: 1.1em;
+    }
+
+    #Pagina-Principal button{
+        width: 36vw;
+    }
+
+}
+
+@media (max-width: 459px) {
+
+    header ul{
+        display: none;
+    }
+    
+    header button{
+        display: none;
+    }
+
+    #Pagina-Principal{
+        text-align: center;
+        margin-top: 20vh;
+        margin-left: 1vw;
+    }
+
+    #Pagina-Principal h1{
+        font-size: 3.5em;
+        line-height: 50px;
+    }
+
+    #Pagina-Principal p{
+        margin-left: 38px;
+        text-align: center;
+        font-size: 1.2em;
     }
 
 }
