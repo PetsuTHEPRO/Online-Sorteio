@@ -8,8 +8,14 @@
     --cor_rosa-padrao: #F77A7A;
 }
 
-header button{
-    background-color: var(--cor_rosa-padrao) !important;
+header button.cadastro{
+    height: 40px;
+    width: 90px;
+    margin: 25px 0px 0px 50px;
+
+    border-radius: 6px;
+    background-color: var(--cor_rosa-padrao);
+    box-shadow: -3px 3px 5px 1px rgba(247, 122, 122, 0.2);
 }
 
 article{
