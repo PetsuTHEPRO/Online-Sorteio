@@ -10,7 +10,21 @@ function non_query($sql){
 		}
 	}
 }
-
+function response_query($sql){
+	if($conn = open_connection_database()){
+		if ($result = $conn->query($sql)) {
+			if ($result->num_rows > 0) {
+				close_connection_database($conn);
+			  	return $result;
+			} else {
+				close_connection_database($conn);
+			  	return false;
+			}
+		}else {
+			echo "Error: " . $sql . " | " . $conn->error;
+		}
+	}
+}
 function open_connection_database(){
 	$server = "localhost";
 	$username = "usuariodb";
@@ -23,5 +37,5 @@ function open_connection_database(){
 	return $conn;
 }
 function close_connection_database($conn){
-	mysqli_close($conn);
+	$conn->close();
 }
