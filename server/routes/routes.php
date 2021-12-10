@@ -8,7 +8,8 @@ function main_routes($data_request){
 	 		Create_Account($data_request);
 	 		//echo "{ main_routes | create_register } : Send Request !";
 	 		break;
-	 	
+	 	case "login":
+	 		Login_Account($data_request);
 	 	default:
 	 		//echo "{ main_routes | create_register } : Invalid Request !";
 	 		break;
