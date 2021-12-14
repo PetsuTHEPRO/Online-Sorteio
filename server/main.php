@@ -1,6 +1,6 @@
 <?php
 
-require_once __dir__."/routes/routes.php";
+require_once __dir__."/Routes/Routes.php";
 
 $Data_Json = file_get_contents('php://input');
 $Data_Request = json_decode($Data_Json, true);
