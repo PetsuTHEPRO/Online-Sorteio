@@ -25,6 +25,7 @@ function response_query($sql){
 		}
 	}
 }
+
 function open_connection_database(){
 	$server = "localhost";
 	$username = "usuariodb";

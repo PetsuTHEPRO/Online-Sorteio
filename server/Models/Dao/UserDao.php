@@ -1,8 +1,8 @@
 <?php
-require_once __dir__."/../entity/user.php";
-require_once __dir__."/../../database/database.php";
+require_once __dir__."/../Entity/UserEntity.php";
+require_once __dir__."/../../Database/Database.php";
 
-class User_DAO{
+class UserDAO{
 	public static function insert_query($values){
 		$sql = "INSERT INTO user (user_ig, name, date, email, pass) VALUES ($values)";
 		non_query($sql);
@@ -17,5 +17,6 @@ class User_DAO{
 			$users[$i] = new User($row['id'], $row['user_ig'], $row['name'], $row['date'], $row['email'], $row['pass']);
 			$i++;
 	    }
+		return $users;
 	}	
 }

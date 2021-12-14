@@ -1,28 +1,29 @@
-import onClickButtonForm  from "./form.js";
+import onClickButtonForm from "./form.js";
+import sendRequest from './connection.js';
+import { setCookie } from './cookies.js';
 
 const login = (DataForm, callback) => {
-	DataForm["cmnd"] = "login";
-	var data = JSON.stringify(DataForm);
-	var request = new XMLHttpRequest();
-	request.open("POST", "../server/main.php", !0);
-	request.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-	request.send(data);
-	request.onreadystatechange = function () {
-		if (request.readyState === 4 && request.status === 200) {
-		    try{
-		        jsondata = JSON.parse(request.responseText);
-		       	console.log(jsondata);
-		    }catch(e) {
-		 		console.log(request.responseText);
-		    }
-		}
-	}
+	DataForm["cmnd"] = "login_user";
+	sendRequest(DataForm, stateLogin)
 }
-const getLogModelObjData = () => {
+const stateLogin = (response, data) => {
+	const states = {
+		'UserLoginValid' : function(){
+			setCookie('UserLogin', data.email, 3);
+			setCookie('PasswordLogin', data.password, 3);
+			window.location.href = 'conectado.html';
+		},
+		'UserLoginInvalid' : function(){
+			console.log("erro");
+		},
+	}
+	states[response]();
+}
+const getLoginModelObjData = () => {
 	return {
 		"button" : document.getElementById("form-button-log"),
 		"email" : document.getElementById("form-email"),
 		"password" : document.getElementById("form-password"),
 	}
 }
-onClickButtonForm(getLogModelObjData(), login);
+onClickButtonForm(getLoginModelObjData(), login);
