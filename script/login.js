@@ -2,7 +2,8 @@ import onClickButtonForm from "./form.js";
 import sendRequest from './connection.js';
 import { setCookie } from './cookies.js';
 import './modules/notify.min.js';
-const login = (DataForm, callback) => {
+
+const login = (DataForm) => {
 	DataForm["cmnd"] = "login_user";
 	sendRequest(DataForm, stateLogin)
 }
@@ -17,7 +18,10 @@ const stateLogin = (response, data) => {
 			$.notify('Usuario ou Senha Incorretas!', 'error')
 		},
 	}
-	states[response]();
+	var resp = response.split(';')
+	resp.forEach(r => {
+		states[r]();
+	})
 }
 const getLoginModelObjData = () => {
 	return {

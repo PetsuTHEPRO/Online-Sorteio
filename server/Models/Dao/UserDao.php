@@ -5,7 +5,8 @@ require_once __dir__."/../../Database/Database.php";
 class UserDAO{
 	public static function insert_query($values){
 		$sql = "INSERT INTO user (user_ig, name, date, email, pass) VALUES ($values)";
-		non_query($sql);
+		if ( non_query($sql) ) return true;
+		else return false;
 	}
 	public static function select_query($condicion){
 		$sql = "SELECT * FROM `user` WHERE $condicion";

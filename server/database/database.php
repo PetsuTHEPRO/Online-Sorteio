@@ -7,6 +7,7 @@ function non_query($sql){
 			return true;
 		}else {
 			echo "Error: " . $sql . " | " . $conn->error;
+			return false;
 		}
 	}
 }
@@ -22,6 +23,7 @@ function response_query($sql){
 			}
 		}else {
 			echo "Error: " . $sql . " | " . $conn->error;
+			return false;
 		}
 	}
 }
@@ -34,6 +36,7 @@ function open_connection_database(){
 	$conn = mysqli_connect($server, $username, $password, $dbname);
 	if ($conn->connect_error) {
 		echo "Connection failed: " . $conn->connect_error ;
+		return false;
 	}
 	return $conn;
 }

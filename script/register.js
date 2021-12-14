@@ -1,9 +1,30 @@
 import onClickButtonForm  from "./form.js";
 import sendRequest from './connection.js';
+import { setCookie } from './cookies.js';
 
-const register = (DataForm, callback) => {
+const register = (DataForm) => {
 	DataForm["cmnd"] = "create_register";
-	sendRequest(DataForm);
+	sendRequest(DataForm, stateRegister);
+}
+
+const stateRegister = (response, data) => {
+	const states = {
+		'UserRegisterValid' : function(){
+			setCookie('UserLogin', data.email, 3);
+			setCookie('PasswordLogin', data.password, 3);
+			window.location.href = 'conectado.html';
+		},
+		'UserRegisterInvalid' : function(){
+			$.notify('Usuario de Instagram Já Cadastrado!', 'error')
+		},
+		'EmailRegisterInvalid' : function(){
+			$.notify('Email Já Cadastrado!', 'error')
+		},
+	}
+	var resp = response.split(';')
+	resp.forEach(r => {
+		states[r]();
+	})
 }
 const getRegModelObjData = () => {
 	return {

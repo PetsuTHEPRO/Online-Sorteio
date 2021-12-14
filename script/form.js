@@ -1,16 +1,20 @@
+import 'https://code.jquery.com/jquery-3.6.0.js';
+import './modules/notify.min.js';
+
 const onClickButtonForm = (DataForm, callback) => {
 	DataForm.button.addEventListener("click", ()=>{
-		if ( verifyForm(DataForm) ){ return false }
+		if ( validateForm(DataForm) ){ return false }
 		var data = getData(DataForm)
 		callback(data);
 	})
 }
 
-const verifyForm = (DataForm) => {
-	var verifyData = Object.values(DataForm)
+const validateForm = (DataForm) => {
+	var validateData = Object.values(DataForm)
 	var thereError = false
-	verifyData.forEach( (input, i ) => {
+	validateData.forEach( (input, i ) => {
 		if(input.value === "" && i != 0){
+			$.notify(`Campo ${input.name} Vazio!`, 'error')
 			thereError = true
 		}
 	});

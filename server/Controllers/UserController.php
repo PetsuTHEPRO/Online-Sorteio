@@ -7,10 +7,11 @@ class UserController{
 
 	public static function Create_Account($data_user){
 		$ServiceUser = new UserService();
-		if($ServiceUser->Register($data_user)){
-			echo "";
+		if($response = $ServiceUser->Register($data_user)){
+			if ( gettype($response) == 'string' ) echo $response ;
+			else echo "UserRegisterValid";
 		} else {
-			echo "";
+			echo "ServerError";
 		}
 	}
 
