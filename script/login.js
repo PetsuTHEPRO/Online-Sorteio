@@ -1,7 +1,7 @@
 import onClickButtonForm from "./form.js";
 import sendRequest from './connection.js';
 import { setCookie } from './cookies.js';
-
+import './modules/notify.min.js';
 const login = (DataForm, callback) => {
 	DataForm["cmnd"] = "login_user";
 	sendRequest(DataForm, stateLogin)
@@ -14,7 +14,7 @@ const stateLogin = (response, data) => {
 			window.location.href = 'conectado.html';
 		},
 		'UserLoginInvalid' : function(){
-			console.log("erro");
+			$.notify('Usuario ou Senha Incorretas!', 'error')
 		},
 	}
 	states[response]();
