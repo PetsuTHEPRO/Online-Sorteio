@@ -6,6 +6,7 @@
 
 * {
     margin: 0;
+    user-select: none;
 }
 
 
@@ -64,6 +65,7 @@ header ul li a:hover {
     margin-left: 750px;
     margin-top: 0px;
     animation: isBouncing 1s ease-in-out alternate infinite;
+    pointer-events: none;
 }
 
 
