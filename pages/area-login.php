@@ -5,23 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
             crossorigin="anonymous">
     </script>
 </head>
 <body>
-    <header>
-        <img src="../imagens/logo-test.png" alt="logo-site">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="como-funciona.html">Como funciona?</a></li>
-            <li><a target="_blank" href="https://www.instagram.com">Instagram</a></li>
-            <li><a href="#">Sobre nós</a></li>
-        </ul>
-        <button id='page-register' class="button btn-cadastro">Cadastro</button>
-    </header>
+    
     
     <article class="titulo-painel login">
         <h1>Painel de Login</h1>
@@ -34,9 +25,9 @@
         <div class="conexao">
             <input type="checkbox" name="" id="checkbox-conectado"> Mantenha-me conectado.
         </div>
-        <button class="button" id="form-button-log">Entrar</button>
+        <button class="button" id="form-btn">Entrar</button>
     </div>
-    <script type="module" src="../script/login.js"></script>
-    <script type="module" src="../script/main.js"></script>
+    <span id="name-page">area-login</span>
+    <script type="module" src="./script/main.js"></script>
 </body>
 </html>

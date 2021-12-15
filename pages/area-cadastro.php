@@ -5,19 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <header>
-        <img src="../imagens/logo-test.png" alt="logo-site">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="como-funciona.html">Como funciona?</a></li>
-            <li><a target="_blank" href="https://www.instagram.com">Instagram</a></li>
-            <li><a href="#">Sobre nós</a></li>
-        </ul>
-        <button id='page-login' class="button btn-login">Login</button>
-    </header>
+    <?php include "./header.php"; ?>
 
     <article class="titulo-painel cadastro">
         <h1>Painel de Cadastro</h1>
@@ -33,9 +24,9 @@
         <input type="password" id="form-password" name="Senha">
         <span id="nascimento">Data de Nascimento:</span>
         <input type="date" id="form-date" name="Data de nascimento">
-        <button class="button" id="form-button-reg">Cadastrar</button>
+        <button class="button" id="form-btn">Cadastrar</button>
     </div>
-    <script type="module" src="../script/register.js"></script>
-    <script type="module" src="../script/main.js"></script>
+    <span id="name-page">area-cadastro</span>
+    <script type="module" src="./script/main.js"></script>
 </body>
 </html>
