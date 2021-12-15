@@ -13,6 +13,7 @@
     <?php include "./header.php"; ?>
     
     <article id="Pagina-Principal">
+        <img src="imagens/instagram-logo.png" alt="Instagram" class="instagram-logo">
         <h1>Como funciona?</h1>
         <p>Vamos ajudar você usuário do Instagram
         a organizar sua gigantesca lista de "IG's" 

@@ -11,6 +11,7 @@
 <body>
     <?php include "./header.php"; ?>
     <article id="Pagina-Principal">
+        <img src="imagens/instagram-logo.png" alt="Instagram" class="instagram-logo">
         <h1>Tente,<br>Respire, Ganhe</h1>
         <p>Se estiverem esperando, que eu desista<br>é bom esperarem sentados.</p>
         <button id="page-register" class="button">Cadastra-se</button>   
