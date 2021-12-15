@@ -45,3 +45,9 @@
               animation-timing-function: ease-out;
     }
 }
+
+@keyframes isBouncing{
+    to{
+        transform: translateY(30px);
+    }
+}

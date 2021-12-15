@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../style/resposividade.css">
 </head>
 <body>
-    <header>
+    <div id="menu-tela">
+        <header>
         <img src="../imagens/logo-test.png" alt="logo-site">
         <ul>
             <li><a href="#">Home</a></li>
@@ -18,12 +19,23 @@
             <li><a href="#">Sobre nós</a></li>
         </ul>
         <button onclick="window.location.href = 'area-login.html'" class="button btn-login">Login</button>
+        <div class="menu-check">
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
     </header>
     <article id="Pagina-Principal">
+        <img src="../imagens/instagram-logo.png" alt="Instagram" class="instagram-logo">
         <h1>Tente,<br>Respire, Ganhe</h1>
         <p>Se estiverem esperando que eu desista<br>é bom esperarem sentados.</p>
         <button onclick="window.location.href = 'area-cadastro.html'" class="button">Cadastra-se</button>   
     </article>
     <script src="../script/main.js"></script>
+</div>
 </body>
 </html>

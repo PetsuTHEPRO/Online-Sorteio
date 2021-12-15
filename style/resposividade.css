@@ -70,8 +70,17 @@
 
 @media (min-width: 750px) and (max-width: 812px){
 
+    .menu-check{
+        display: block;
+        margin-top: 20px;
+    }
+
     header .btn-login{
         display: none;
+    }
+    
+    header img{
+        margin: 5vh 52vw auto 11vw;
     }
 
     header ul{
@@ -96,6 +105,15 @@
 }
 
 @media (min-width: 650px) and (max-width: 750px) {
+
+    .menu-check{
+        display: block;
+        margin-top: 20px;
+    }
+
+    header img{
+        margin: 5vh 48vw auto 11vw;
+    }
 
     header ul{
         display: none;
@@ -124,6 +142,15 @@
 }
 
 @media (min-width: 459px) and (max-width: 650px) {
+
+    .menu-check{
+        display: block;
+        margin-top: 20px;
+    }
+
+    header img{
+        margin: 5vh 38vw auto 11vw;
+    }
 
     header ul{
         display: none;
