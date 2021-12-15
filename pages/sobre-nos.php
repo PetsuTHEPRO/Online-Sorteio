@@ -10,16 +10,8 @@
 
 </head>
 <body>
-    <header>
-        <img src="../imagens/logo-test.png" alt="logo-site">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="como-funciona.html">Como funciona?</a></li>
-            <li><a target="_blank" href="https://www.instagram.com">Instagram</a></li>
-            <li><a href="#">Sobre nós</a></li>
-        </ul>
-        <button id='page-login' class="button btn-login">Login</button>
-    </header>
+    <?php include "./header.php"; ?>
+    
     <article id="Pagina-Principal">
         <img src="../imagens/instagram-logo.png" alt="Instagram" class="instagram-logo">
         <h1>Sobre nos?</h1>

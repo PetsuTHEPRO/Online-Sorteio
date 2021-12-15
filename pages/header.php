@@ -11,9 +11,9 @@
         <img src="./imagens/logo-test.png" alt="logo-site">
         <ul>
             <li><a href="./index.php">Home</a></li>
-            <li><a href="como-funciona.php">Como funciona?</a></li>
+            <li><a href="./como-funciona.php">Como funciona?</a></li>
             <li><a target="_blank" href="https://www.instagram.com">Instagram</a></li>
-            <li><a href="#">Sobre nós</a></li>
+            <li><a href="./sobre-nos.php">Sobre nós</a></li>
         </ul>
         <button id='btn-header' class="button"></button>
     </header>

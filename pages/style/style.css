@@ -60,14 +60,13 @@ header ul li a:hover {
     box-shadow: -3px 3px 5px 1px rgba(0, 0, 255, .2);
 }
 
-#Pagina-Principal .instagram-logo{
+#Pagina-Principal .instagram-logo {
     position: absolute;
     margin-left: 750px;
     margin-top: 0px;
     animation: isBouncing 1s ease-in-out alternate infinite;
     pointer-events: none;
 }
-
 
 
 /* Estilização da Página Home */
@@ -159,12 +158,12 @@ header ul li a:hover {
     background-color: var(--cor_azul);
 }
 
-#login .conexao{
+#login .conexao {
     display: flex;
     font-family: 'Cocomat', sans-serif;
 }
 
-#login #checkbox-conectado{
+#login #checkbox-conectado {
     margin-right: 10px;
 }
 
@@ -241,18 +240,19 @@ header ul li a:hover {
     background-color: var(--cor_rosa-padrao);
 }
 
+
 /* Checkbox - Menu */
 
-.menu-check{
+.menu-check {
     display: none;
 }
 
-#checkbox-menu{
+#checkbox-menu {
     position: absolute;
     opacity: 0;
 }
 
-label{
+label {
     cursor: pointer;
     position: relative;
     display: block;
@@ -260,7 +260,7 @@ label{
     width: 30px;
 }
 
-label span{
+label span {
     position: absolute;
     display: block;
     height: 5px;
@@ -270,28 +270,28 @@ label span{
     transition: 0.25s ease-in-out;
 }
 
-label span:nth-child(1){
+label span:nth-child(1) {
     top: 0;
 }
 
-label span:nth-child(2){
+label span:nth-child(2) {
     top: 8px;
 }
 
-label span:nth-child(3){
+label span:nth-child(3) {
     top: 16px;
 }
 
-#checkbox-menu:checked + label span:nth-child(1){
+#checkbox-menu:checked+label span:nth-child(1) {
     transform: rotate(-45deg);
     top: 8px;
 }
 
-#checkbox-menu:checked + label span:nth-child(2){
+#checkbox-menu:checked+label span:nth-child(2) {
     opacity: 0;
 }
 
-#checkbox-menu:checked + label span:nth-child(3){
+#checkbox-menu:checked+label span:nth-child(3) {
     transform: rotate(45deg);
     top: 8px;
 }
