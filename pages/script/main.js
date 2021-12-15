@@ -18,15 +18,14 @@ const typeButtonHeader = () => {
     var btnHeader = document.getElementById('btn-header')
     var namePage = document.getElementById('name-page').innerHTML
 
-    if (namePage == 'area-cadastro' || namePage == 'index') {
-        btnHeader.innerHTML = "Login"
-        btnHeader.classList.add('btn-login');
-        btnHeader.addEventListener('click', e => window.location.href = './area-login.php')
-
-    } else {
+    if (namePage == 'area-login') {
         btnHeader.innerHTML = "Cadastro"
         btnHeader.classList.add('btn-cadastro');
         btnHeader.addEventListener('click', e => window.location.href = './area-cadastro.php')
+    } else {
+        btnHeader.innerHTML = "Login"
+        btnHeader.classList.add('btn-login');
+        btnHeader.addEventListener('click', e => window.location.href = './area-login.php')
     }
 }
 typeButtonHeader();
