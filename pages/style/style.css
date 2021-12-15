@@ -59,7 +59,6 @@ header ul li a:hover {
     box-shadow: -3px 3px 5px 1px rgba(0, 0, 255, .2);
 }
 
-<<<<<<< HEAD:style/style.css
 #Pagina-Principal .instagram-logo{
     position: absolute;
     margin-left: 750px;
@@ -68,8 +67,6 @@ header ul li a:hover {
 }
 
 
-=======
->>>>>>> b2019e220fcd6803eaae36b2ae0ae7984f80b5f8:pages/style/style.css
 
 /* Estilização da Página Home */
 
@@ -242,7 +239,6 @@ header ul li a:hover {
     background-color: var(--cor_rosa-padrao);
 }
 
-<<<<<<< HEAD:style/style.css
 /* Checkbox - Menu */
 
 .menu-check{
@@ -297,8 +293,7 @@ label span:nth-child(3){
     transform: rotate(45deg);
     top: 8px;
 }
-=======
+
 #name-page {
     display: none;
 }
->>>>>>> b2019e220fcd6803eaae36b2ae0ae7984f80b5f8:pages/style/style.css
