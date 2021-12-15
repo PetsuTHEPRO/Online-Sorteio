@@ -12,7 +12,7 @@
     <?php include "./header.php"; ?>
     <article id="Pagina-Principal">
         <h1>Tente,<br>Respire, Ganhe</h1>
-        <p>Se estiverem esperando que eu desista<br>é bom esperarem sentados.</p>
+        <p>Se estiverem esperando, que eu desista<br>é bom esperarem sentados.</p>
         <button id="page-register" class="button">Cadastra-se</button>   
     </article>
     <span id="name-page">index</span>
