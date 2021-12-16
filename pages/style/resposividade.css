@@ -13,12 +13,17 @@
         margin: 5vh 8vw auto 4vw;
     }
     
+    #Pagina-Principal .instagram-logo {
+        margin-left: 60vw;
+    }
+
 }
 
 @media (min-width: 1024px) and (max-width: 1115px) {
     
     header img{
         margin: 5vh 13vw auto 8vw;
+        
     }
 
     header .btn-login{
@@ -27,6 +32,12 @@
 
     #Pagina-Principal{
         margin-left: 8vw;
+    }
+
+    #Pagina-Principal .instagram-logo {
+        margin-left: 60vw;
+        height: 290px;
+        width: 260px;
     }
 }
 
@@ -49,6 +60,8 @@
 
     #Pagina-Principal .instagram-logo {
         margin-left: 55vw;
+        height: 280px;
+        width: 242px;
     }
 }
 
@@ -80,6 +93,8 @@
 
     #Pagina-Principal .instagram-logo {
         margin-left: 56vw;
+        height: 272px;
+        width: 235px;
     }
 }
 
@@ -209,6 +224,11 @@
 
 @media (max-width: 459px) {
 
+    .menu-check{
+        display: block;
+        margin-top: 20px;
+    }
+
     header ul{
         display: none;
     }
@@ -229,13 +249,13 @@
     }
 
     #Pagina-Principal p{
-        margin-left: 38px;
         text-align: center;
+        width: 90vw;
         font-size: 1.2em;
     }
 
     #Pagina-Principal .instagram-logo {
         display: none;
     }
-    
+
 }

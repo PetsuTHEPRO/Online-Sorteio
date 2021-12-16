@@ -16,6 +16,14 @@
             <li><a href="./sobre-nos.php">Sobre nós</a></li>
         </ul>
         <button id='btn-header' class="button"></button>
+        <div class="menu-check">
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
     </header>
     
 </body>
