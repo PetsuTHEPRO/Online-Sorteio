@@ -39,6 +39,17 @@
         margin: 19vh auto auto 9vw;
     }
 
+    #Pagina-Principal h1{
+        font-size: 3.6em;
+    }
+
+    #Pagina-Principal p{
+        font-size: 19px;
+    }
+
+    #Pagina-Principal .instagram-logo {
+        margin-left: 55vw;
+    }
 }
 
 @media (min-width: 812px) and (max-width: 980px) {
@@ -56,15 +67,19 @@
     }
 
     #Pagina-Principal h1{
-        font-size: 4em;
+        font-size: 3.5em;
     }
 
     #Pagina-Principal p{
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     #Pagina-Principal button{
         width: 28vw;
+    }
+
+    #Pagina-Principal .instagram-logo {
+        margin-left: 56vw;
     }
 }
 
@@ -101,6 +116,10 @@
 
     #Pagina-Principal button{
         width: 28vw;
+    }
+
+    #Pagina-Principal .instagram-logo {
+        display: none;
     }
 }
 
@@ -139,6 +158,9 @@
         width: 30vw;
     }
 
+    #Pagina-Principal .instagram-logo {
+        display: none;
+    }
 }
 
 @media (min-width: 459px) and (max-width: 650px) {
@@ -179,6 +201,10 @@
         width: 36vw;
     }
 
+    #Pagina-Principal .instagram-logo {
+        display: none;
+    }
+
 }
 
 @media (max-width: 459px) {
@@ -208,4 +234,8 @@
         font-size: 1.2em;
     }
 
+    #Pagina-Principal .instagram-logo {
+        display: none;
+    }
+    
 }

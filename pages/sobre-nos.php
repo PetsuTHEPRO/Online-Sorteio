@@ -13,7 +13,7 @@
     <?php include "./header.php"; ?>
     
     <article id="Pagina-Principal">
-        <img src="../imagens/instagram-logo.png" alt="Instagram" class="instagram-logo">
+        <img src="imagens/instagram-logo.png" alt="Instagram" class="instagram-logo">
         <h1>Sobre nos?</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis libero saepe animi nihil perspiciatis hic recusandae culpa id aspernatur aliquam unde, assumenda vitae quam, deleniti, quisquam sequi adipisci porro voluptas.</p>
     </article>
