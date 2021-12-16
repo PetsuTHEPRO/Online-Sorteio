@@ -1,10 +1,9 @@
-import onClickButtonForm from "./form.js";
 import sendRequest from './connection.js';
 import { setCookie } from './cookies.js';
 import './modules/notify.min.js';
 
 const login = (DataForm) => {
-    DataForm["cmnd"] = "login_user";
+    DataForm["command"] = "login_user";
     sendRequest(DataForm, stateLogin)
 }
 const stateLogin = (response, data) => {

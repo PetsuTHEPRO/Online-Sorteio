@@ -1,9 +1,8 @@
-import onClickButtonForm from "./form.js";
 import sendRequest from './connection.js';
 import { setCookie } from './cookies.js';
 
 const register = (DataForm) => {
-    DataForm["cmnd"] = "create_register";
+    DataForm["command"] = "create_register";
     sendRequest(DataForm, stateRegister);
 }
 
