@@ -6,7 +6,8 @@ const sendRequest = (data, callback) => {
     request.send(dataJson);
     request.onreadystatechange = function() {
         if (request.readyState === 4 && request.status === 200) {
-            callback(request.responseText, data);
+            //callback(request.responseText, data);
+            console.log(request.responseText);
         }
     }
 }

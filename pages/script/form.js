@@ -15,7 +15,7 @@ const validateForm = (DataForm) => {
     validateData.forEach((input, ) => {
         if (input.value === "") {
             $.notify(`Campo ${input.name} Vazio!`, 'error')
-            thereError = true
+                //thereError = true
         }
     });
     return thereError;

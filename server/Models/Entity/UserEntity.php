@@ -10,11 +10,11 @@ class User{
 
 	function __construct($id, $user, $name, $date, $email, $password){
 		$this->_id = $id;
-		$this->_user = $user;
-		$this->_name = $name;
-		$this->_date = $date;
-		$this->_email = $email;
-		$this->_password = $password;
+		$this->_user = trim($user);
+		$this->_name = trim($name);
+		$this->_date = trim($date);
+		$this->_email = trim($email);
+		$this->_password = trim($password);
 	}
 	function dbdata(){
 		return (string) "'$this->_user', '$this->_name', '$this->_date', '$this->_email', '$this->_password'";

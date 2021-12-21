@@ -9,7 +9,7 @@ const pageLoad = () => {
     if (namePage === 'area-login') {
         onClickButtonForm(getLoginModelObjData(), login);
     }
-    if (namePage == 'area-cadastro') {
+    if (namePage === 'area-cadastro') {
         onClickButtonForm(getRegisterModelObjData(), register);
     }
 }
